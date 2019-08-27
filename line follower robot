@@ -1,0 +1,29 @@
+void setup()
+{
+  pinMode(2, INPUT);
+  pinMode(3, INPUT);
+  pinMode(4, INPUT);
+  pinMode(5, INPUT);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  int i1 = digitalRead(2);
+  int i2 = digitalRead(3);
+  int i3 = digitalRead(4);
+  int i4 = digitalRead(5);
+  if (i1 == HIGH)
+  {
+    Serial.print("sensor 1");
+  }
+  if (i2 == HIGH)
+  {
+    Serial.print("sensor 2");
+  }
+  if (i3 == HIGH)
+  {
+    Serial.print("sensor 3");
+
+  }
+}
